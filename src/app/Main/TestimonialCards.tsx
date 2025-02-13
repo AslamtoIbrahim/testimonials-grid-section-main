@@ -23,27 +23,27 @@ const TestimonialCards = ({
 }: prop) => {
   return (
     <div
-      className={`p-6 flex flex-col gap-3 rounded-md font-barlow text-neutral-200  ${cardStyle} `}
+      className={`p-6 lg:p-8 flex flex-col gap-3 lg:gap-5 rounded-md font-barlow text-neutral-200  ${cardStyle} `}
     >
       <section className="flex items-center gap-4">
         <Image
-          className={`rounded-full  border-2 w-10 ${imageStyle}`}
+          className={`rounded-full  border-2 w-10 lg:w-12 ${imageStyle}`}
           src={data.image}
           alt={data.name}
           width={56}
           height={56}
         />
 
-        <div className={`text-neutral-lightGray leading-tight ${nameStyle}`}>
+        <div className={`text-neutral-lightGray lg:text-base leading-tight ${nameStyle}`}>
           <p className="">{data.name} </p>
           <p className="opacity-50">{data.status} </p>
         </div>
       </section>
       <section>
-        <p className={` text-xl leading-tight`}>{data.title} </p>
+        <p className={` text-xl leading-tight `}>{data.title} </p>
       </section>
       <section>
-        <p className="opacity-50 leading-tight ">
+        <p className="opacity-50 leading-tight lg:text-base">
           {`" ${data.quote} "`}
         </p>
       </section>
